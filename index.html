@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="section menu">
+
+        </div>
+
+        <div class="section header">
+            <!--<div class="photo">
+                <img src="./img/photo-small.jpg"
+                srcset="./img/photo-big.jpg 2000w,
+                ./img/photo-small.jpg 1000w"
+                sizes="(min-width:960px) 960px, 100vw">
+            </div> -->
+            <div class="photo">
+                <picture>
+                    <source media="(min-width: 401px)" 
+                    srcset="./img/photo-big.jpg"/>
+
+                    <source media="(max-width: 400px)" 
+                    srcset="./img/photo-tall.jpg"/>
+                    
+                    <img src="./img/photo-small.jpg"/>
+
+                </picture>
+            </div>
+        </div>
+
+        <div class="section content">
+            <img class="illustration" src="./img/illustration-big.png" 
+            alt="computador" style="max-width: 500px;"> <!---alteramos essa div-->
+        </div>
+
+        <div class="section sign-up">
+            <img src="./img/sign-up.svg" alt="">
+        </div>
+
+        <div class="section feature-1">
+            <img src="img/feature.svg" alt="">
+        </div>
+
+        <div class="section feature-2">
+            <img src="./img/feature.svg" alt="">
+        </div>
+
+        <div class="section feature-3">
+            <img src="./img/feature.svg" alt="">
+        </div>
+
+    </div>
+</body>
+</html>
